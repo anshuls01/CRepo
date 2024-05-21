@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.28)
+project(LearningC C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(LearningC main.c
+        Basics/DataTypes.h
+        Basics/DataTypes.c
+        Basics/PrintFBasics.h
+        Basics/PrintFBasics.c
+        Basics/ScanFBasics.h
+        Basics/ScanFBasics.c
+)
