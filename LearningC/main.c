@@ -10,7 +10,7 @@ int main(void)
     printf("address of a : %p", &a);
 
     DifferentDataTypes();
-    printPrintFRules();
-    printScanffBasicUsage();
+    // printPrintFRules();
+    // printScanffBasicUsage();
     return 0;
 }

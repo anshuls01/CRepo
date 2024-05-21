@@ -27,6 +27,13 @@ void DifferentDataTypes()
     printf("\nDeclare constatnt variable in C");
     printf("\n const int x = 5 OR int const x = 5");
 
+
+    printf("\n**************************************\n");
+    printf("\nDeclare Array in C");
+    printf("\n char arr[20] or int arr[]={1,2,3,4} or char arr[] = \"I Love C\"");
+    // char arr[]= "I love c";
+    // printf("\n %s", arr);
+
     printf("\n\n");
 
 

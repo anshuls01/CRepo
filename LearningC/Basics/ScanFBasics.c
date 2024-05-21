@@ -28,11 +28,11 @@ void printScanffBasicUsage() {
     printf ("\n use command scanf(\"%%s\", &arr), where arr is a variable name to store the value, and & synbol not required, because char[] name denotes the first char memory location");
     printf("\n space acts as terminate char and no value stores after the space, to read the complte string there is a different method: fgets");
     printf("\n fgets Syntax: fgets(arr, 20,stdin), where arr is variable name, 20 is length, stdin denoting the input is from console");
-    char arr[20];
-    printf ("\n Enter string value: ");
-    scanf("%s", arr);
-    fgets(arr, 20,stdin);
-    printf("\n Value entered %s", arr);
+    // char arr[20];
+    // printf ("\n Enter string value: ");
+    // scanf("%s", arr);
+    // fgets(arr, 20,stdin);
+    // printf("\n Value entered %s", arr);
 
 
 
