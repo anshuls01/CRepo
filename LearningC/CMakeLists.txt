@@ -10,4 +10,6 @@ add_executable(LearningC main.c
         Basics/PrintFBasics.c
         Basics/ScanFBasics.h
         Basics/ScanFBasics.c
+        FileSystem/ReadWriteFile.h
+        FileSystem/BasicReadWriteFile.c
 )

@@ -73,6 +73,12 @@ build CMakeFiles/LearningC.dir/Basics/ScanFBasics.c.o: C_COMPILER__LearningC_uns
   OBJECT_DIR = CMakeFiles/LearningC.dir
   OBJECT_FILE_DIR = CMakeFiles/LearningC.dir/Basics
 
+build CMakeFiles/LearningC.dir/FileSystem/BasicReadWriteFile.c.o: C_COMPILER__LearningC_unscanned_Debug /Users/anshul.singhal/Documents/Dummy/C/LearningC/FileSystem/BasicReadWriteFile.c || cmake_object_order_depends_target_LearningC
+  DEP_FILE = CMakeFiles/LearningC.dir/FileSystem/BasicReadWriteFile.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/LearningC.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearningC.dir/FileSystem
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LearningC
@@ -81,7 +87,7 @@ build CMakeFiles/LearningC.dir/Basics/ScanFBasics.c.o: C_COMPILER__LearningC_uns
 #############################################
 # Link the executable LearningC
 
-build LearningC: C_EXECUTABLE_LINKER__LearningC_Debug CMakeFiles/LearningC.dir/main.c.o CMakeFiles/LearningC.dir/Basics/DataTypes.c.o CMakeFiles/LearningC.dir/Basics/PrintFBasics.c.o CMakeFiles/LearningC.dir/Basics/ScanFBasics.c.o
+build LearningC: C_EXECUTABLE_LINKER__LearningC_Debug CMakeFiles/LearningC.dir/main.c.o CMakeFiles/LearningC.dir/Basics/DataTypes.c.o CMakeFiles/LearningC.dir/Basics/PrintFBasics.c.o CMakeFiles/LearningC.dir/Basics/ScanFBasics.c.o CMakeFiles/LearningC.dir/FileSystem/BasicReadWriteFile.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/LearningC.dir
   POST_BUILD = :

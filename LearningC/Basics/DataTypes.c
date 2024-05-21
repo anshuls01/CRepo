@@ -31,6 +31,9 @@ void DifferentDataTypes()
     printf("\n**************************************\n");
     printf("\nDeclare Array in C");
     printf("\n char arr[20] or int arr[]={1,2,3,4} or char arr[] = \"I Love C\"");
+    printf("\n In c there is no String datatype and char[] will be used instead of string.");
+    printf("\n For Example:\n char name[] = \"""Tom smith\"""");
+    printf("\n void printName(char name[])\n {\n\tprintf(\"""%%s\""",name);\n }");
     // char arr[]= "I love c";
     // printf("\n %s", arr);
 
