@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "Basics/CBasics.h"
+#include "Basics/CVariables.h"
 #include "Basics/DataTypes.h"
 #include "Basics/PrintFBasics.h"
 #include "Basics/ScanFBasics.h"
@@ -9,9 +11,11 @@ int main(void)
     // int a = 10;
     // printf("address of a : %p", &a);
 
+    PrintBasics();
+    PrintCVariablesBasic();
     // DifferentDataTypes();
     // printPrintFRules();
     // printScanffBasicUsage();
-    writeAndReadFile();
+    // writeAndReadFile();
     return 0;
 }

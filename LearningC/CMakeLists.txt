@@ -12,4 +12,10 @@ add_executable(LearningC main.c
         Basics/ScanFBasics.c
         FileSystem/ReadWriteFile.h
         FileSystem/BasicReadWriteFile.c
+        Pointers/BasicPointers.h
+        Pointers/BasicPointers.c
+        Basics/CBasics.h
+        Basics/CBasics.c
+        Basics/CVariables.h
+        Basics/CVariables.c
 )
