@@ -4,5 +4,5 @@
 
 #ifndef BASICPOINTERS_H
 #define BASICPOINTERS_H
-
+void declareBasicPointer();
 #endif //BASICPOINTERS_H

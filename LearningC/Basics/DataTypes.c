@@ -5,6 +5,7 @@
 #include "DataTypes.h"
 void DifferentDataTypes()
 {
+    printf("\n**************************************\n");
     printf("\n");
     printf("C Main Data types:");
     printf("\n");
@@ -38,6 +39,19 @@ void DifferentDataTypes()
     // printf("\n %s", arr);
 
     printf("\n\n");
-
-
+    printf("\n**************************************\n");
+    printf("\nSize of Address is 8 byte on 64 bit system (8*8) and 4 byte on 32 bit system (8*4)");
+    printf("\nsimlarly for all pointer variable size will be either 8 or 4");
+    printf("\nFor example:");
+    printf("\n\tsizeof(intptr) will be 8 or 4");
+    printf("\n\tsizeof(charptr) will be 8 or 4");
+    printf("\n\tsizeof(doubleptr) will be 8 or 4");
+    printf("\n while size of de-refenced pointer variable will be the size of datatype");
+    printf("\n For Example:");
+    printf("\n\tsizeof(double) or sizeof(*doubleptr) is 8");
+    printf("\n\tsizeof(int) or sizeof(*intptr) is 4");
+    printf("\n\tsizeof(char) or sizeof(*charptr) is 1");
+    printf("\n For Example:\n char name[] = \"""Tom smith\"""");
+    printf("\n**************************************\n");
+    printf("\n\n");
 }

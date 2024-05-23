@@ -4,7 +4,14 @@
 #include <stdio.h>
 #include "CVariables.h"
 void PrintCVariablesBasic() {
-    printf("\nC Variable Types -> The C variables can be classified into the following types:\n");
+    printf("\nC Variables");
+    printf("\nRules for Naming Variables in C");
+    printf("\n\tYou can assign any name to the variable as long as it follows the following rules:");
+        printf("\n\t\t1. A variable name must only contain alphabets, digits, and underscore.");
+        printf("\n\t\t2. A variable name must start with an alphabet or an underscore only. It cannot start with a digit.");
+        printf("\n\t\t3. No whitespace is allowed within the variable name.");
+        printf("\n\t\t4. A variable name must not be any reserved word or keyword.");
+    printf("\n\nC Variable Types -> The C variables can be classified into the following types:");
     printf("\n 1. Local Variables");
     printf("\n 2. Global Variables");
     printf("\n 3. Static Variables");

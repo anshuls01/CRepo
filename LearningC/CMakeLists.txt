@@ -18,4 +18,6 @@ add_executable(LearningC main.c
         Basics/CBasics.c
         Basics/CVariables.h
         Basics/CVariables.c
+        Pointers/ConstAndPointer.h
+        Pointers/ConstAndPointer.c
 )
