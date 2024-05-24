@@ -103,6 +103,12 @@ build CMakeFiles/LearningC.dir/Pointers/ConstAndPointer.c.o: C_COMPILER__Learnin
   OBJECT_DIR = CMakeFiles/LearningC.dir
   OBJECT_FILE_DIR = CMakeFiles/LearningC.dir/Pointers
 
+build CMakeFiles/LearningC.dir/Pointers/PointersAndArray.c.o: C_COMPILER__LearningC_unscanned_Debug /Users/anshul.singhal/Documents/Dummy/C/LearningC/Pointers/PointersAndArray.c || cmake_object_order_depends_target_LearningC
+  DEP_FILE = CMakeFiles/LearningC.dir/Pointers/PointersAndArray.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/LearningC.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearningC.dir/Pointers
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LearningC
@@ -111,7 +117,7 @@ build CMakeFiles/LearningC.dir/Pointers/ConstAndPointer.c.o: C_COMPILER__Learnin
 #############################################
 # Link the executable LearningC
 
-build LearningC: C_EXECUTABLE_LINKER__LearningC_Debug CMakeFiles/LearningC.dir/main.c.o CMakeFiles/LearningC.dir/Basics/DataTypes.c.o CMakeFiles/LearningC.dir/Basics/PrintFBasics.c.o CMakeFiles/LearningC.dir/Basics/ScanFBasics.c.o CMakeFiles/LearningC.dir/FileSystem/BasicReadWriteFile.c.o CMakeFiles/LearningC.dir/Pointers/BasicPointers.c.o CMakeFiles/LearningC.dir/Basics/CBasics.c.o CMakeFiles/LearningC.dir/Basics/CVariables.c.o CMakeFiles/LearningC.dir/Pointers/ConstAndPointer.c.o
+build LearningC: C_EXECUTABLE_LINKER__LearningC_Debug CMakeFiles/LearningC.dir/main.c.o CMakeFiles/LearningC.dir/Basics/DataTypes.c.o CMakeFiles/LearningC.dir/Basics/PrintFBasics.c.o CMakeFiles/LearningC.dir/Basics/ScanFBasics.c.o CMakeFiles/LearningC.dir/FileSystem/BasicReadWriteFile.c.o CMakeFiles/LearningC.dir/Pointers/BasicPointers.c.o CMakeFiles/LearningC.dir/Basics/CBasics.c.o CMakeFiles/LearningC.dir/Basics/CVariables.c.o CMakeFiles/LearningC.dir/Pointers/ConstAndPointer.c.o CMakeFiles/LearningC.dir/Pointers/PointersAndArray.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/LearningC.dir
   POST_BUILD = :

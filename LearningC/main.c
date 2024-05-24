@@ -6,6 +6,7 @@
 #include "Basics/ScanFBasics.h"
 #include "FileSystem/ReadWriteFile.h"
 #include "Pointers/BasicPointers.h"
+#include "Pointers/PointersAndArray.h"
 int main(void)
 {
     // printf("Hello, World!\n");
@@ -15,11 +16,12 @@ int main(void)
     // PrintBasics();
     // PrintCVariablesBasic();
 
-     DifferentDataTypes();
+    // DifferentDataTypes();
     // printPrintFRules();
     // printScanffBasicUsage();
     // writeAndReadFile();
 
-    declareBasicPointer();
+    // declareBasicPointer();
+    PontersWithArray();
     return 0;
 }
