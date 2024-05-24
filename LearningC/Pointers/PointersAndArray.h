@@ -5,4 +5,5 @@
 #ifndef POINTERSANDARRAY_H
 #define POINTERSANDARRAY_H
 void PontersWithArray();
+void PointersToStringArray();
 #endif //POINTERSANDARRAY_H

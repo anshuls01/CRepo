@@ -3,8 +3,8 @@
 //
 #include <stdio.h>
 #include "DataTypes.h"
-void DifferentDataTypes()
-{
+//#define Length 3;
+void DifferentDataTypes() {
     printf("\n**************************************\n");
     printf("\n");
     printf("C Main Data types:");
@@ -54,4 +54,5 @@ void DifferentDataTypes()
     printf("\n For Example:\n char name[] = \"""Tom smith\"""");
     printf("\n**************************************\n");
     printf("\n\n");
+
 }

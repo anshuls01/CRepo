@@ -22,6 +22,7 @@ int main(void)
     // writeAndReadFile();
 
     // declareBasicPointer();
-    PontersWithArray();
+    // PontersWithArray();
+    PointersToStringArray();
     return 0;
 }

@@ -4,7 +4,7 @@
 #include <stdio.h>;
 #include "PointersAndArray.h"
 
-void PontersWithArray() {
+void PontersWithCharArray() {
     printf("\n**************************************");
     printf("\nC doesn't have dedicated String data type");
     printf("\ninstead in C, string is char array");
@@ -50,4 +50,106 @@ void PontersWithArray() {
     printf("\nprintf(\"%%s\\t%%p\\t%%p\", str2, &str2, str2) value is %s\t%p\t%p", str2, &str2, str2);
     printf("\n**************************************");
     printf("\n");
+
+
+    printf("\nMultiple Dereferencing (Indirection) of pointer");
+    int data[3];
+    int *pi;
+    int **ppi;
+    printf("\nMultiple indirection example");
+    for(int i = 0;i<3;i++) {
+        data[i]= i;
+    }
+    printf("\n");
+    for(int i = 0;i<3;i++) {
+        printf("\t%d", data[i]);
+    }
+
+    pi = data; // or pi = &data or pi = &data[i]
+    ppi = &pi;
+
+    for(int i = 0;i<3;i++) {
+        printf("\n");
+        printf("\n Loop[%d] array address is %p", i, data);
+        printf("\n item pointed to by pi is %d", *pi);
+        printf("\n item pointed to by ppi is %p", *ppi);
+        printf("\n item pointed to double indirection of ppi is %d", **ppi);
+        printf("\n The address of pi  is %p and the value of pi (what is points to) is %p", &pi,ppi);
+        printf("\n The value of pi is %p and it's point to %d", pi,*pi);
+        pi = pi+1;
+    }
+}
+void PointersToStringArray() {
+    printf("\n**************************************");
+    printf("\nDeclare a string array in C");
+    printf("\nSyntax to declare string array in C is: char *words[3]");
+    printf("\nWhile char array declration can be done in two ways");
+    printf("\n\t char str[] = \"Hello\"");
+    printf("\n\t char *str2 = \"World\"");
+    char *words[3];
+    printf("\nTo understand the above think words[0], words[1], words[2] are 3 different char array in words");
+    printf("\nAnd words[0] will give the first char address, while printf(\"%%s\",words[0]) will return the whole string stored at words[0]");
+    printf("\nwords[0] can be declared as char str[] or char *str");
+    printf("\nThat means string array is pointer to pointer to char array (string) and can be declared as char **stringPtr");
+    printf("\nExample: ");
+    printf("\nchar *words[3];");
+    printf("\nwords[0] = \"Zero\";");
+    printf("\nwords[1] = \"One\"; ");
+    printf("\nwords[2] = \"Two\"; ");
+    printf("\nchar **stringPtr[3];");
+    printf("\nstringPtr[0] = \"Zero\";");
+    printf("\nstringPtr[1] = \"One\"; ");
+    printf("\nstringPtr[2] = \"Two\";");
+    printf("\nboth the above declaration are same");
+    printf("\nthat means a **ppc [pointer to pointer charcter] can hold the starting address of string array");
+    printf("\nlike, \n char *pi; \n char arr[3]; \n pi=arr; //or pi=&arr");
+    printf("\nMore precisely \n char **ppc;\n ppc=words;");
+    printf("\nAND ppc+1 give the starting address of words[1] and so on");
+    printf("\none derefrence of ppc will give the starting address of words[0]/words[1]/words[2] depends on ppc reference that time");
+    printf("\nthat means: \n char *pc; \n pc = *ppc;");
+    printf("\nthat means: *pc will give the first char value");
+    words[0] = "Zero";
+    words[1] = "One";
+    words[2] = "Two";
+    char **stringPtr[3];
+    stringPtr[0] = "Zero";
+    stringPtr[1] = "One";
+    stringPtr[2] = "Two";
+    printf("\nlets see the output below: ");
+    char **ppc;
+    char *pc;
+    char **sPPtr;
+    char *sPtr;
+    sPPtr=stringPtr;
+    for(int i = 0;i<3;i++) {
+        ppc = words +i;
+        pc = *ppc; // address of ppc
+        printf("\nPPC address is %p, derferenced value *ppc %p, PPC valus is %p, Address of words %p", &ppc,*ppc, ppc, words);
+        printf("\nPC address is %p, derferenced value *pc %p,PC valus is %p", &pc, *pc, pc);
+        printf("\nwords[%d] address is: %p",  i, words[i]);
+        while(*pc!=0) // de-referencing pointer again will give the actual char stored
+        {
+            printf("\nPC address is %p,PC valus is %p, derferenced value *ppc %p", &pc, pc, *ppc);
+            printf("  %c ", *pc);
+            pc = pc+1;
+        }
+        printf("\n");
+    }
+
+
+    for(int i = 0;i<3;i++) {
+        sPPtr = stringPtr +i;
+        sPtr = *sPPtr; // address of ppc
+        printf("\nsPPtr address is %p, derferenced value *sPPtr %p, sPPtr valus is %p, Address of stringPtr %p", &sPPtr,*sPPtr, sPPtr, sPtr);
+        printf("\nsPtr address is %p, derferenced value *sPtr %p,sPtr valus is %p", &sPtr, *sPtr, sPtr);
+        printf("\nstringPtr[%d] address is: %p",  i, stringPtr[i]);
+        while(*sPtr!=0) // de-referencing pointer again will give the actual char stored
+        {
+            printf("\nsPtr address is %p,sPtr valus is %p, derferenced value *sPPtr %p", &sPtr, sPtr, *sPPtr);
+            printf("  %c ", *sPtr);
+            sPtr = sPtr+1;
+        }
+        printf("\n");
+    }
+
 }
