@@ -22,4 +22,6 @@ add_executable(LearningC main.c
         Pointers/ConstAndPointer.c
         Pointers/PointersAndArray.h
         Pointers/PointersAndArray.c
+        Pointers/GenericPointer.h
+        Pointers/GenericPointer.c
 )

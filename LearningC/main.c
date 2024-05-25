@@ -7,6 +7,7 @@
 #include "FileSystem/ReadWriteFile.h"
 #include "Pointers/BasicPointers.h"
 #include "Pointers/PointersAndArray.h"
+#include "Pointers/GenericPointer.h"
 int main(void)
 {
     // printf("Hello, World!\n");
@@ -23,6 +24,7 @@ int main(void)
 
     // declareBasicPointer();
     // PontersWithArray();
-    PointersToStringArray();
+    // PointersToStringArray();
+    UnderstandingGenericPointer();
     return 0;
 }
