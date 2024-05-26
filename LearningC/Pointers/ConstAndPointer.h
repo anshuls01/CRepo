@@ -4,5 +4,5 @@
 
 #ifndef CONSTANDPOINTER_H
 #define CONSTANDPOINTER_H
-
+void printConstAndPointerRule();
 #endif //CONSTANDPOINTER_H

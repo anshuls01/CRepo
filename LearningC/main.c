@@ -7,8 +7,10 @@
 #include "FileSystem/ReadWriteFile.h"
 #include "Pointers/BasicPointers.h"
 #include "Pointers/PointersAndArray.h"
+#include "Pointers/ConstAndPointer.h"
 #include "Pointers/GenericPointer.h"
 #include "MemoryManagement/AllocatingMemory.h"
+
 int main(void)
 {
     // printf("Hello, World!\n");
@@ -21,12 +23,15 @@ int main(void)
     // DifferentDataTypes();
     // printPrintFRules();
     // printScanffBasicUsage();
-    // writeAndReadFile();
+
 
     // declareBasicPointer();
+    printConstAndPointerRule();
     // PontersWithArray();
     // PointersToStringArray();
     // UnderstandingGenericPointer();
-    DynamicMemoryAllocation();
+    // DynamicMemoryAllocation();
+
+    // writeAndReadFile();
     return 0;
 }
