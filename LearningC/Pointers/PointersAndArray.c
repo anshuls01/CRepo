@@ -57,20 +57,20 @@ void PontersWithCharArray() {
     int *pi;
     int **ppi;
     printf("\nMultiple indirection example");
-    for(int i = 0;i<3;i++) {
-        data[i]= i;
+    for(int j = 0;j<3;j++) {
+        data[j]= j;
     }
     printf("\n");
-    for(int i = 0;i<3;i++) {
-        printf("\t%d", data[i]);
+    for(int j = 0;j<3;j++) {
+        printf("\t%d", data[j]);
     }
 
     pi = data; // or pi = &data or pi = &data[i]
     ppi = &pi;
 
-    for(int i = 0;i<3;i++) {
+    for(int j = 0;j<3;j++) {
         printf("\n");
-        printf("\n Loop[%d] array address is %p", i, data);
+        printf("\n Loop[%d] array address is %p", j, data);
         printf("\n item pointed to by pi is %d", *pi);
         printf("\n item pointed to by ppi is %p", *ppi);
         printf("\n item pointed to double indirection of ppi is %d", **ppi);
@@ -120,7 +120,7 @@ void PointersToStringArray() {
     char *pc;
     char **sPPtr;
     char *sPtr;
-    sPPtr=stringPtr;
+    sPPtr = stringPtr;
     for(int i = 0;i<3;i++) {
         ppc = words +i;
         pc = *ppc; // address of ppc
@@ -151,5 +151,22 @@ void PointersToStringArray() {
         }
         printf("\n");
     }
+
+}
+
+void TraversePointersWith2DArray(int* arr, int M, int N) {
+    for(int i =0;i<M;i++) {
+        for(int j = 0;j<N;j++) {
+            printf("%d ",*((arr + i*M) + j));
+            // printf("%d ",*(arr  + j));
+        }
+        printf("\n");
+        // arr= arr+M;
+    }
+}
+void PointersWith2DArray() {
+    int N = 3, M= 3;
+    int arr[][3] = {{1,2,3}, {4,5,6},{7,8,9}};
+    TraversePointersWith2DArray(arr,M, N);
 
 }

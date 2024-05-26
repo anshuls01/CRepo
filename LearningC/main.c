@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "Basics/CBasics.h"
 #include "Basics/CVariables.h"
 #include "Basics/DataTypes.h"
@@ -11,14 +12,15 @@
 #include "Pointers/GenericPointer.h"
 #include "MemoryManagement/AllocatingMemory.h"
 
+
 int main(void)
 {
     // printf("Hello, World!\n");
     // int a = 10;
     // printf("address of a : %p", &a);
 
-    // PrintBasics();
-    // PrintCVariablesBasic();
+     // PrintBasics();
+     // PrintCVariablesBasic();
 
     // DifferentDataTypes();
     // printPrintFRules();
@@ -26,12 +28,16 @@ int main(void)
 
 
     // declareBasicPointer();
-    printConstAndPointerRule();
+    // printConstAndPointerRule();
     // PontersWithArray();
+    PointersWith2DArray();
     // PointersToStringArray();
     // UnderstandingGenericPointer();
     // DynamicMemoryAllocation();
 
     // writeAndReadFile();
+
+
     return 0;
 }
+

@@ -1,6 +1,6 @@
 //
 // Created by Anshuls01 on 22/05/24.
-//
+// Credit: https://www.geeksforgeeks.org/different-ways-declare-variable-constant-c-c/?ref=lbp
 #include <stdio.h>
 #include "DataTypes.h"
 //#define Length 3;
@@ -27,7 +27,12 @@ void DifferentDataTypes() {
 
     printf("\nDeclare constatnt variable in C");
     printf("\n const int x = 5 OR int const x = 5");
-
+    printf("\n\t Constant can be defined in 3 ways:");
+    printf("\n\t\t 1. Using const Keyword: const int x = 5;"
+           "\n\t\t 2. Using Macros/preprocessor: #define MAXLENGTH 5;"
+           "\n\t\t 3. Using enum Keyword: enum VARS { var = 42 };");
+    printf("\n\t Note: preprocessor and enum only works as a literal constant and integers constant respectively. Hence they only define the symbolic name of constant. Therefore if you need a constant variable with a specific memory address use either ‘const’ or ‘constexpr’ according to the requirement.");
+    printf("more at: https://www.geeksforgeeks.org/different-ways-declare-variable-constant-c-c/?ref=lbp");
 
     printf("\n**************************************\n");
     printf("\nDeclare Array in C");

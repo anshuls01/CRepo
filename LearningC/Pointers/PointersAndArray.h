@@ -6,4 +6,6 @@
 #define POINTERSANDARRAY_H
 void PontersWithArray();
 void PointersToStringArray();
+void PointersWith2DArray();
+void TraversePointersWith2DArray(int* arr, int M, int N);
 #endif //POINTERSANDARRAY_H
