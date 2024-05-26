@@ -8,6 +8,7 @@
 #include "Pointers/BasicPointers.h"
 #include "Pointers/PointersAndArray.h"
 #include "Pointers/GenericPointer.h"
+#include "MemoryManagement/AllocatingMemory.h"
 int main(void)
 {
     // printf("Hello, World!\n");
@@ -25,6 +26,7 @@ int main(void)
     // declareBasicPointer();
     // PontersWithArray();
     // PointersToStringArray();
-    UnderstandingGenericPointer();
+    // UnderstandingGenericPointer();
+    DynamicMemoryAllocation();
     return 0;
 }
