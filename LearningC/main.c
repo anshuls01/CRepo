@@ -10,8 +10,9 @@
 #include "Pointers/PointersAndArray.h"
 #include "Pointers/ConstAndPointer.h"
 #include "Pointers/GenericPointer.h"
+#include "Pointers/PointerToFunction.h"
 #include "MemoryManagement/AllocatingMemory.h"
-
+#include "DataStructure/linkedlist.h"
 
 int main(void)
 {
@@ -30,9 +31,12 @@ int main(void)
     // declareBasicPointer();
     // printConstAndPointerRule();
     // PontersWithArray();
-    PointersWith2DArray();
+    // PointersWith2DArray();
     // PointersToStringArray();
     // UnderstandingGenericPointer();
+    BasicPointerToFunction();
+    DemoArrayOfFunctionPointer();
+    DemoPassFunctionPointerAsArgument();
     // DynamicMemoryAllocation();
 
     // writeAndReadFile();
